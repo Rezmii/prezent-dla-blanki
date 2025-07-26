@@ -6,8 +6,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata = {
-  title: 'Wyjątkowa Laurka dla Blanki',
-  description: 'Stworzone z miłością przez Bartka',
+  title: 'Kocham Cię - 26.07.2025',
+
 };
 
 export default function RootLayout({ children }) {

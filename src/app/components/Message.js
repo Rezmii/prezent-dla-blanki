@@ -1,20 +1,39 @@
 // src/components/Message.js
+"use client";
+
+import { PiHeartFill } from 'react-icons/pi'; // Importujemy ikonę serca
 
 const Message = () => {
   return (
-    <section className="w-full max-w-2xl px-4 mx-auto">
-      {/* Używamy naszego odręcznego fontu i kolorów */}
-      <p className="text-2xl leading-relaxed text-center md:text-3xl lg:text-4xl text-main font-handwritten">
-        Moja Kochana Blanko,
-        <br />
-        Trudno uwierzyć, że to już trzy lata. Czasem czuję, jakbyśmy poznali się wczoraj, a jednocześnie mam wrażenie, jakbym znał Cię od zawsze.
-        <br /><br />
-        Każdy dzień z Tobą to nowa, piękna strona w naszej wspólnej historii. Dziękuję Ci za każdy uśmiech, za nieskończone wsparcie i za to, że po prostu jesteś. Zmieniasz każdy, nawet najzwyklejszy dzień, w coś wyjątkowego.
-        <br /><br />
-        Wiem, że przed nami jeszcze tyle przygód do przeżycia i marzeń do spełnienia. Nie mogę się doczekać, by dzielić je wszystkie właśnie z Tobą.
-        <br /><br />
-        Jesteś dla mnie wszystkim.
-      </p>
+    // Ustawiamy kontener jako 'relative', aby móc umieścić serce w tle
+    <section className="relative w-full max-w-2xl px-4 mx-auto">
+      
+      {/* 1. Serca w tle */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <PiHeartFill className="text-accent-secondary opacity-40" style={{ fontSize: '20rem' }} />
+      </div>
+
+      {/* Kontener na tekst, który będzie na wierzchu (dzięki 'relative') */}
+      <div className="relative text-center">
+        {/* 2. Wyróżniony tytuł */}
+        <h1 className="mb-8 text-4xl font-handwriting text-text-main ">
+          3 lata razem !!!
+        </h1>
+
+        {/* 3. Akapity z ozdobnym inicjałem */}
+        <div className="space-y-6 text-xl leading-relaxed md:text-2xl text-main font-handwriting">
+          <p>
+           
+            Dziękuję Ci za Twój piękny uśmiech, który zawsze poprawia mi humor, za Twoje wsparcie i po prostu za to, że jesteś.
+          </p>
+          <p>
+            Jestem bardzo szczęśliwy, mogąc w końcu codziennie budzić się i zasypiać obok Ciebie.
+          </p>
+          <p>
+            To były najlepsze 3 lata mojego życia, a przed nami jeszcze tyle wspaniałych chwil. Nie mogę się doczekać, żeby spędzić je wszystkie z Tobą.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
