@@ -14,7 +14,12 @@
   .font-handwriting {
     font-family: var(--font-patrick-hand);
   }
+    .font-serif {
+    font-family: var(--font-cormorant);
+  }
 }
+
+
 
 /* 4. Opcjonalne style globalne */
 body {
