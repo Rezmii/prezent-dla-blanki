@@ -1,0 +1,24 @@
+/* 1. Importujemy całą magię Tailwind v4 */
+@import "tailwindcss";
+
+/* 2. Definiujemy nasz motyw (kolory, breakpointy itp.) jako zmienne CSS */
+@theme {
+  --color-background: #FDFCFB;
+  --color-text-main: #413F3D;
+  --color-accent-primary: #D9A592;
+  --color-accent-secondary: #EADAD3;
+}
+
+/* 3. Definiujemy dodatkowe, własne klasy narzędziowe */
+@layer utilities {
+  .font-handwriting {
+    font-family: var(--font-patrick-hand);
+  }
+}
+
+/* 4. Opcjonalne style globalne */
+body {
+  /* Zamiast theme() użyj var() */
+  background-color: var(--color-background);
+  color: var(--color-text-main); /* Możemy też od razu ustawić domyślny kolor tekstu */
+}
