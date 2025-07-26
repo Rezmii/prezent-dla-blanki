@@ -7,12 +7,12 @@ import Image from 'next/image'; // Używamy komponentu Image z Next.js do optyma
 // Lista tymczasowych zdjęć. Zastąpimy je Twoimi!
 // Używamy różnych proporcji, aby kolaż był ciekawszy.
 const yourPhotos = [
-  { src: '/photos/IMG_6763.JPG', alt: 'Nasze zdjęcie 1', rotation: 'rotate-[4deg]' },
-  { src: '/photos/IMG_6726.JPG', alt: 'Nasze zdjęcie 2', rotation: 'rotate-[2deg]' },
-  { src: '/photos/IMG_5016.JPG', alt: 'Nasze zdjęcie 3', rotation: 'rotate-[-3deg]' },
-  { src: '/photos/IMG_7217.JPG', alt: 'Nasze zdjęcie 4', rotation: 'rotate-[-1deg]' },
-  { src: '/photos/IMG_7415.JPG', alt: 'Nasze zdjęcie 5', rotation: 'rotate-[-4deg]' },
-  { src: '/photos/IMG_7904.JPG', alt: 'Nasze zdjęcie 6', rotation: 'rotate-[3deg]' },
+  { src: '/photos/IMG_6763.jpg', alt: 'Nasze zdjęcie 1', rotation: 'rotate-[4deg]' },
+  { src: '/photos/IMG_6726.jpg', alt: 'Nasze zdjęcie 2', rotation: 'rotate-[2deg]' },
+  { src: '/photos/IMG_5016.jpg', alt: 'Nasze zdjęcie 3', rotation: 'rotate-[-3deg]' },
+  { src: '/photos/IMG_7217.jpg', alt: 'Nasze zdjęcie 4', rotation: 'rotate-[-1deg]' },
+  { src: '/photos/IMG_7415.jpg', alt: 'Nasze zdjęcie 5', rotation: 'rotate-[-4deg]' },
+  { src: '/photos/IMG_7904.jpg', alt: 'Nasze zdjęcie 6', rotation: 'rotate-[3deg]' },
 ];
 
 const InteractiveCollage = () => {
